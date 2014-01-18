@@ -31,7 +31,7 @@
 <a name="welcome-to-github-pages" class="anchor"
    href="#welcome-to-github-pages">
   <span class="octicon octicon-link"></span>
-  </a>Welcome to my GitHub repositories.</h3>
+  </a>Welcome to my GitHub repositories</h3>
 
 <p>This page presents my language Small that I created in the seventies as a
   portable language for systems and application programming that can be
@@ -48,8 +48,8 @@
   Emeritus William Waite of the University of Colorado in the late sixties. </p>
 
 <p>My language Small is built using Stage 2 as its bootstrap compiler. My
-  Master of Science thesis, <i>Small: A Contribution to the Mobile Programming
-  System</i>, is reproduced here as a reference manual.</p>
+  Master of Science thesis, <I>Small: A Contribution to the Mobile Programming
+  System</I>, is reproduced here as a reference manual.</p>
 
 <p>Stage 2 is used in this presentation as a two pass compiler. The first pass
   uses a set of macros from my thesis to translate source code in Small to
@@ -63,7 +63,54 @@
   also possible to combine macros into a single set to make a one pass
   compiler. However I chose to present the two pass process for the sake of
   clarity.</p>
-
+<h2><a>My Repositories</a></h2>
+<p>Each repository contains a README.txt file that describes the contents and
+  how it can be used and what is needed. A makefile also shows how to build
+  components. The LICENSE is the general public license, GPLv2, and applies
+  to all files created by me and that contain my name or initials CRB.</p>
+<h3><a>simcomp</a></h3>
+<p>The Simple Compiler is a simple text substitution macro processor
+  implemented here as a stand-alone C program based on the SIMCMP Fortran
+  program of the MPS translated to C. The compiled executable is immediately
+  usable on 32- and 64-bit Linux systems. The simcmp executable is used to
+  create a first working version of the Stage 2 macro processor. There is also
+  a subdirectory containing a port to ARMv6 for the Raspberry Pi.</p>
+<h3><a>stage2-1</a></h3>
+<p>This repository contains simcmp macros to translate the Stage 2 source code
+  to 32-bit x86 assembly language for the yasm assembler. The source code for
+  Stage 2 is embedded in the comments of the assembly code stream, but is not
+  presented directly until we can get permission from Professor Waite. Again,
+  the stage2 executable is immediately usable.>/p>
+<h3><a>stage2-2</a></h3>
+<p>This repository contains the Stage 2 macros to translate the Stage 2 source
+  code to x86 assembly language with many simple optimizations applied. The
+  compiled executable, stg2, should be copied to your /usr/local/bin or
+  wherever you keep local executable for further use. The optimized executable
+  is smaller and faster than the stage2-1 implementation.</p>
+<h3><a>small</a></h3>
+<p>This repository presents the simple mobile algorithmic language using Stage
+  2 as its compiler. The first pass uses the macros small.s2m to translate
+  Small source code to Mill, a machine independent low level language. The
+  second pass translates Mill to 32-bit x86 assembly language for the yasm
+  assembler. A reproduction of my 1982 masters thesis serves as a reference
+  manual for Small and Mill. Several example programs and tests are included
+  in subdirectories along with makefiles. This is a work in progress and more
+  examples will be forthcoming.<p>
+<h3><a>grandios</a></h3>
+<p>This repository contains a fully expanded I/O system written in C modeled
+  on the F4IO Fortran I/O module in the MPS. The grandios I/O module is
+  required for both Stage 2 implementations and is also currently used for
+  Small programs. Up to nine channels can be attached to files using
+  positional parameters on the command line. In addition channels 1, 3, and 4
+  can default to stdin, stdout, and stderr respectively. Also channel 1 has
+  been modified to revert to stdin when an input file reaches end-of-file. A
+  smaller version to be called Demios targeted for Small programs is under
+  construction.</p>
+<h3><a>hexdmp</a></h3>
+<p>This repository contains a C program to dump the contents of a file in
+  hexadecimal and ASCII.</p>
+<h3><a>crandylb.github.io</a></h3>
+<p>This repository containing the file index.html for this Web page.</p>
 <p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
 
 <h3>
