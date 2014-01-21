@@ -4,11 +4,12 @@
   <head>
     <meta charset='utf-8' />
     <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="crandylb.github.io : Welcome to my
-    repositories for Small, a simple mobile algorithmic language by Charles
+    <meta name="description" content="crandylb.github.io : Welcome to my GitHub
+    Repositories for Small, a Simple Mobile Algorithmic Language -- Charles
     Randyl Britten" />
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+    <link rel="stylesheet" type="text/css" media="screen" 
+	  href="stylesheets/stylesheet.css">
 
     <title>crandylb.github.io</title>
   </head>
@@ -18,12 +19,13 @@
     <!-- HEADER -->
     <div id="header_wrap" class="outer">
         <header class="inner">
-          <a id="forkme_banner" href="https://github.com/crandylb">View on GitHub</a>
+          <a id="forkme_banner" 
+	     href="https://github.com/crandylb">View on GitHub</a>
 
           <h1 id="project_title">crandylb.github.io</h1>
-          <h2 id="project_tagline">Welcome to my repositories for Small, a
-          simple mobile algorithmic language by Charles Randyl Britten</h2>
-
+          <h2 id="project_tagline">Welcome to my GitHub Repositories for
+	    Small, a Simple Mobile Algorithmic language -- 
+	    Charles Randyl Britten</h2>
         </header>
     </div>
 
@@ -34,14 +36,26 @@
 <a name="welcome-to-github-pages" class="anchor"
    href="#welcome-to-github-pages">
   <span class="octicon octicon-link"></span>
-  </a>Welcome to my GitHub repositories</h3>
+  </a>Introduction</h3>
 
-<p>This page presents my language called Small that I created in the seventies
-  as a portable language for systems and application programming that can be
-  implemented by a full bootstrap. The process is based on macro processors.
+<p>Small is a simple programming language that can be implemented by a full
+  bootstrap. I created Small while I was a graduate student at the University
+  of Washington. Beyond being highly portable, Small has modest goals. It is a
+  language intended to be useful for modest systems and application
+  programming; it has a single integer type determined by the architecture of
+  the host system; it supports structured programming with arithmetic and
+  conditional statements and expressions, repetition statements, functions and
+  procedures with parameters and recursion, and can be compiled to assembly
+  language or interpreted. It is Turing Complete. It has enough convenient
+  features to be practical. It is extensible by being relatively easy to add
+  statement forms, features, and types.</p>
+
+<p>A "full bootstrap" means it is possible to implement Small on a new system
+  with a minimum of existing support software that includes an assembler and
+  linking loader. The bootstrap process is based on macro processors.
   The first stage uses simcmp, a simple text processing algorithm that can be
   written, or translated by hand, into any available programming language or
-  assembly language; then it is used to translate the source code for Stage 2
+  assembly language; then that is used to translate the source code for Stage 2
   into any available language or assembly code. Next, this complete working
   version of Stage 2, with far more capable features than simcmp, is used to
   translate the Stage 2 source to assembly language with a number of
@@ -53,7 +67,7 @@
 
 <p>Small is built using Stage 2 as its bootstrap compiler. My
   Master of Science thesis, <I>Small: A Contribution to the Mobile Programming
-  System</I>, is reproduced in the repository as a reference manual.</p>
+  System</I>, is reproduced in the small repository as a reference manual.</p>
 
 <p>Stage 2 is used in this presentation as a two pass compiler. The first pass
   uses a set of macros from my thesis to translate source code in Small to
